@@ -83,7 +83,7 @@ ul {
     .search__full {
         top: 4px; } }
 .search__full_open {
-    width: 1110px;
+    width: 1050px;
     opacity: 1; }
 @media (max-width: 1199.98px) {
     .search__full_open {
@@ -141,7 +141,9 @@ ul {
 	margin: 0 15px;
 }
 
-
+.header__menu {
+    margin-left: -15px;
+}
 
 #header .row {
 	align-items: center;
@@ -159,7 +161,7 @@ ul {
 }
 
 .phone a {
-  font-size: 20px;
+      font-size: 1.23rem;
   color: rgb(34, 34, 33);
   line-height: 1.2;
 	font-weight: 500;
@@ -178,7 +180,7 @@ ul {
 }
 
 .header__phones {
-	margin: 0 0 0 50px;
+	margin: 0 0 0 45px;
 }
 
 .login {
@@ -206,10 +208,10 @@ ul {
 
 .contentheader {
 	text-align: center;
-	margin: 10px 0 20px 0;
+	margin: 15px 0 15px 0;
 }
 .contentheader__title {
-	margin-bottom: 23px;
+	margin-bottom: 29px;
 }
 
 .contentheader__title h2 {
@@ -302,7 +304,7 @@ ul {
 
 
 .contentblock {
-	padding: 50px 0 20px 0;
+	padding: 15px  0 15px 0;
 }
 
 .contentfooter {
@@ -331,7 +333,7 @@ ul {
 }
 .itemsimg__title span {
 	display: block;
-	max-width: 238px;
+	max-width: 260px;
 	margin: auto;
 }
 .itemsimg__item {
@@ -344,10 +346,26 @@ ul {
 	    box-shadow: 4px 4px 14px 1px #7d7d7d;
 }
 
+.about {
+	padding-top: 35px;
+}
+
 .mission {
 	background-position: center;
 	background-size: initial;
 	height: 760px;
+}
+
+.imglargeitems {
+	padding: 15px 0 0 0;
+}
+
+.abt {
+	padding-bottom: 30px;
+}
+
+.soc {
+	padding: 25px 0 15px 0;
 }
 
 .imglargeitems__img {
@@ -532,7 +550,7 @@ font-weight: 400;
 
 .formblock {
 	background: #2d4c7d;
-	padding: 35px 0 20px 0;
+	padding: 35px 0 30px 0;
 }
 
 .formblock__content {
@@ -547,7 +565,7 @@ font-weight: 400;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   line-height: 1.2;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 
@@ -561,7 +579,7 @@ font-weight: 400;
     width: 26%;
 }
 .formblock__right {
-    width: 67.5%;
+    width: 68.8%;
 }
 
 .form {
@@ -569,12 +587,12 @@ font-weight: 400;
     justify-content: space-between;
 }
 .form__left {
-	width: 41%;
-	padding-right: 40px;
+	width: 44%;
+	padding-right: 30px;
 }
 
 .form__right {
-    width: 63.4%;
+    width: 65%;
 }
 
 .formblock__text {
@@ -624,6 +642,8 @@ textarea {
 	max-width: 296px;
 	margin: auto;
 	    display: block;
+		height: 42px;
+	line-height: 40px;
 }
 .formblock textarea {
 	background: #fff;
@@ -632,7 +652,7 @@ textarea {
 	font-size: 13px;
 	color: rgb(154, 154, 154);
 	width: 100%;
-
+	padding: 10px 20px;
 	margin: auto;
 	    display: block;
 }
@@ -691,6 +711,7 @@ textarea {
 .footer__content .btn_color {
 	color: #fff;
 	font-weight: normal;
+	min-width: 152px;
 }
 .footer__info {
   font-size: 16px;
@@ -726,7 +747,7 @@ textarea {
 	max-width: 960px;
 	display: flex;
 	justify-content: space-between;
-	padding: 37px 0 46px 30px;
+	padding: 32px 0 46px 30px;
 }
 
 .footer__item1 {
@@ -762,7 +783,7 @@ textarea {
 
   font-size: 16px;
   color: rgb(45, 76, 125);
-  line-height: 1.2;
+  line-height: 1.7;
   text-align: right;
 
 }
@@ -774,6 +795,9 @@ textarea {
 .footer__callback {
 	text-align: right;
 	padding: 20px 0 10px 0;
+	max-width: 152px;
+	float: right;
+
 }
 
 .footer__round {
@@ -792,7 +816,7 @@ textarea {
 }
 
 .footer__right {
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .footer__phones {
