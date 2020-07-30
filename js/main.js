@@ -60,73 +60,15 @@ $(document).ready(function() {
 
 });
 
-
+if ($(window).width() > 991) {
 $(window).scroll(function() {
     scroll = $(window).scrollTop();
-
     if (scroll >= 700) $('#header').addClass('fixed');
     else $('#header').removeClass('fixed');
 });
+}
 
 
-
-
-$(document).ready(function() {
-    var number = document.querySelector('#num_years'),
-        numberTop = number.getBoundingClientRect().top,
-        start = 0,
-        end = 10;
-    window.addEventListener('scroll', function onScroll() {
-        if (window.pageYOffset > numberTop - window.innerHeight / 1.1) {
-            this.removeEventListener('scroll', onScroll);
-            var interval = setInterval(function() {
-                number.innerHTML = ++start;
-                if (start == end) {
-                    clearInterval(interval);
-                }
-            }, 200);
-        }
-    });
-    number1 = document.querySelector('#num_spec'), numberTop1 = number1.getBoundingClientRect().top, start1 = 0, end1 = 25;
-    window.addEventListener('scroll', function onScroll() {
-        if (window.pageYOffset > numberTop1 - window.innerHeight / 1.1) {
-            this.removeEventListener('scroll', onScroll);
-            interval1 = setInterval(function() {
-                number1.innerHTML = ++start1;
-                if (start1 == end1) {
-                    clearInterval(interval1);
-                }
-            }, 80);
-        }
-    });
-    number2 = document.querySelector('#num_sites'), numberTop2 = number2.getBoundingClientRect().top, start2 = 0, end2 = 50;
-    window.addEventListener('scroll', function onScroll() {
-        if (window.pageYOffset > numberTop2 - window.innerHeight / 1.1) {
-            this.removeEventListener('scroll', onScroll);
-            interval2 = setInterval(function() {
-                number2.innerHTML = ++start2;
-                if (start2 == end2) {
-                    clearInterval(interval2);
-                }
-            }, 40);
-        }
-    });
-
-    number3 = document.querySelector('#num_tasks'), numberTop3 = number3.getBoundingClientRect().top, start3 = 0, end3 = 100;
-    window.addEventListener('scroll', function onScroll() {
-        if (window.pageYOffset > numberTop3 - window.innerHeight / 1.1) {
-            this.removeEventListener('scroll', onScroll);
-            interval3 = setInterval(function() {
-                number3.innerHTML = ++start3;
-                if (start3 == end3) {
-                    clearInterval(interval3);
-                }
-            }, 20);
-        }
-    });
-
-
-});
 
 
 
