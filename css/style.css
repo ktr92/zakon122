@@ -1285,7 +1285,7 @@ input:disabled {
 		background: #fff;
 		max-width: 230px;
 		margin: 0;
-		top: -33px;
+		top: 3px;
 		left: 3px;
 		box-shadow: 0px 1px 19px -2px #333333;
 		width: 100%;
@@ -1520,6 +1520,89 @@ input:disabled {
 	}
 	.formblock {
 		padding: 0;
+	}
+	.formblock__content {
+		padding: 10px 0 25px 0;
+	}
+	.formblock input[type="text"], .formblock input[type="tel"], .formblock input[type="email"] {
+		max-width: 320px;
+	}
+	.formblock__title {
+		margin-bottom: 7px;
+	}
+	.formblock__descr {
+		font-size: 14px;
+	}
+	.formblock__text {
+		padding-bottom: 16px;
+	}
+	.form__textbtn {
+		padding-bottom: 15px;
+	}
+	.footer__logo {
+		max-width: 100%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.footer__langs {
+		padding: 20px 0 0px 0;
+	}
+	.footer__info {
+		font-size: 13px;
+		margin-top: 15px;
+		font-weight: 500;
+	}
+	.footer__items {
+		padding: 20px 0 0 0;
+	}
+	.footer__item1 {
+		
+		
+    max-width: 100%;
+	
+			margin: auto;
+	}
+	.footer__item2 {
+		display: none;
+	}
+	.footer__item3 {
+		
+    max-width: 100%;
+		padding-right: 0;
+		    position: relative;
+			margin: auto;
+	} 
+	.footer__phonestext {
+		font-size: 14px; 
+	}
+	.footer__callback {
+		padding: 10px 0;
+	}
+	.footer__rounds {
+		float: right;
+		padding: 5px 0;
+		position: absolute;
+		bottom: 8px;
+		z-index: 9;
+	}
+	.formblock__content {
+		max-width: 320px;
+		margin: auto;
+	}
+	.header__content div[class^="col"] {
+		position: initial;
+	}
+	.imglargeitems {
+   
+		max-width: 500px;
+	}
+	.mobilephones {
+		display: flex;
+	}
+	.mobileheader__icons {
+		margin-right: 15px;
 	}
 }
 
