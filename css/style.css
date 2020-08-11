@@ -5,7 +5,7 @@ body {
 	margin: 0;
 	color: #000;
 	min-width: 320px;
-	
+	 font-weight: 400;
 	padding: 0 !important;
 	scroll-behavior: smooth;
 	overflow-x: hidden;
@@ -163,6 +163,7 @@ ul {
 .header__content {
 	 padding: 13px 20px;
 	box-shadow: 0px 3px 9px -1px #7d7d7d;
+	 background: #fff;
 }
 
 .phone a {
@@ -226,7 +227,7 @@ ul {
   line-height: 1.2;
   position: relative;
   display: inline-block;
-  font-weight: normal;
+     font-weight: 300;
 }
 
 .contentheader__title h2:after {
@@ -447,7 +448,7 @@ font-weight: 400;
 
 .career .contentheader__title h2 {
 	color: #fff;
-	font-weight: 400;
+	    font-weight: 300;
 }
 
 .career .contentheader__title h2:after {
@@ -1126,7 +1127,7 @@ input:disabled {
     top: -7px;
     left: 0;
     width: 100%;
-   background: #fff;
+  
     animation: smoothScroll 0.4s forwards;
     padding: 7px 0;
 	
@@ -1142,6 +1143,173 @@ input:disabled {
 .soc__mobile {
 	display: none;
 }
+
+.breadcrumbs ul {
+  padding: 10px 0;
+  list-style: none;
+
+}
+
+.breadcrumbs ul li {
+  display: inline;
+  font-size: 18px;
+}
+
+.breadcrumbs ul li+li:before {
+  padding: 0 2px;
+  color: black;
+  content: "/\00a0";
+  font-size: 13px;
+}
+
+.breadcrumbs ul li a > span {
+  color: rgb(156, 155, 155);
+  text-decoration: none;
+   font-size: 13px;
+       font-weight: 400;
+}
+.breadcrumbs ul li > span {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+   font-size: 13px;
+       font-weight: 400;
+}
+
+
+
+.breadcrumbs ul li a:hover span {
+   color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.breadcrumbs ul li a:hover {
+   color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+
+.pageheader {
+	text-align: center;
+	margin: 15px 0 15px 0;
+}
+.pageheader__title {
+	margin-bottom: 29px;
+}
+
+.pageheader__title h1 {
+  font-size: 50px;
+  color: rgb(34, 34, 33);
+  text-transform: uppercase;
+  line-height: 1.2;
+  position: relative;
+  display: inline-block;
+      font-weight: 300;
+}
+
+.pageheader__title h1:after {
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	content: "";
+	bottom: -7px;
+	left: 0;
+	right: 0;
+	background: #bc5050;
+}
+
+.pageheader__description {
+  font-size: 14px;
+  color: rgb(34, 34, 33);
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 500;
+}
+
+.page {
+	padding: 29px 0;
+}
+
+.page__header {
+	padding: 5px 0 25px 0;
+}
+
+.fivegrid__photo_large {
+	height: 469px;
+}
+
+.fivegrid__photo {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.fivegrid__item_large {
+	display: flex;
+	
+	justify-content: center;
+}
+
+.fivegrid__photo_large {
+	width: 56%;
+}
+.fivegrid__content_large {
+	width: 44%;
+}
+.fivegrid__item {
+	box-shadow: 5px 4px 7px -1px #a2a2a2;
+	margin-bottom: 20px;
+}
+
+.fivegrid__img {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.fivegrid__content {
+	padding: 40px 25px;
+}
+
+.fivegrid__title {
+  font-size: 17px;
+  color: rgb(45, 76, 125);
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding-bottom: 10px;
+  
+}
+.fivegrid__subtitle {
+  font-size: 13px;
+  color: rgb(34, 34, 33);
+  line-height: 1.2;
+	font-weight: 500;
+	padding-bottom: 5px;
+}
+
+.fivegrid__text {
+  font-size: 13px;
+  color: rgb(34, 34, 33);
+  line-height: 1.2;
+  padding-bottom: 15px;
+ 
+}
+
+.fivegrid__items .row {
+	margin: 0;
+}
+
+.fivegrid__items .row > div {
+	padding: 0 10px;
+}
+
+.pageblock {
+	padding: 40px 0 10px 0;
+}
+
+.pagepart {
+	padding: 10px 0;
+}
+
 
 @media (max-width: 1280px) {
 	.header__phones {
