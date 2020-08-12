@@ -1454,6 +1454,49 @@ input:disabled {
 	margin: 10px 0 40px 0;
 }
 
+.accordeon__title {
+	background-image: url(/images/accordeon_down.png);
+	background-position: right 20px center;
+	background-repeat: no-repeat;
+	transition: all 0.2s ease;
+	cursor: pointer;
+	position: relative;
+	  font-size: 22px;
+	  color: rgb(45, 76, 125);
+	  text-transform: uppercase;
+	padding: 10px 20px 10px 30px;
+	background-color: #dfe8f7;
+	margin-bottom: 5px;
+
+}
+
+.accordeon__title.active {
+	background-image: url(/images/accordeon_top.png);
+	background-position: right 20px center;
+	background-repeat: no-repeat;
+	transition: all 0.2s ease;
+}
+
+.accordeon__content {
+	display: none;
+}
+
+.subaccordeon__title {
+  font-size: 17px;
+  color: rgb(34, 34, 33);
+  text-transform: uppercase;
+	height: 45px;
+	padding: 10px 30px;
+	border-bottom: 1px solid #bbbaba;
+	position: relative;
+}
+
+.subaccordeon__items .subaccordeon__item:last-child .subaccordeon__title  {
+	border-bottom: none;
+}
+
+
+
 
 @media (max-width: 1280px) {
 	.header__phones {
