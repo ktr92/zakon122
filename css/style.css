@@ -1486,15 +1486,137 @@ input:disabled {
   color: rgb(34, 34, 33);
   text-transform: uppercase;
 	height: 45px;
-	padding: 10px 30px;
-	border-bottom: 1px solid #bbbaba;
+	padding: 10px  10px 10px 54px;
+
 	position: relative;
+	
+	background-image: url(/images/accordeon_down2.png);
+	background-position: right 20px center;
+	background-repeat: no-repeat;
+	transition: all 0.2s ease;
+	cursor: pointer;
 }
 
-.subaccordeon__items .subaccordeon__item:last-child .subaccordeon__title  {
+.subaccordeon__title.active {
+	background-image: url(/images/accordeon_top2.png);
+	background-position: right 20px center;
+	background-repeat: no-repeat;
+	transition: all 0.2s ease;
+}
+
+.subaccordeon__items .subaccordeon__item {
+		border-bottom: 1px solid #bbbaba;
+}
+.subaccordeon__items .subaccordeon__item:last-child {
 	border-bottom: none;
 }
 
+.subaccordeon__title:before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	background: #a51515;
+	position: absolute;
+	left: 30px;
+	top: 16px;
+}
+
+.subaccordeon__items {
+	padding-top: 15px;
+}
+
+.contenttext {
+	padding: 0px 54px 35px 54px;
+}
+
+
+.contenttext__title {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(34, 34, 33);
+  line-height: 1.2;
+  margin-bottom: 5px;
+
+}
+
+.contenttext__text {
+	 font-size: 13px;
+  color: rgb(34, 34, 33);
+  line-height: 1.2;
+}
+
+.contenttext_columns2 {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -20px;
+}
+
+.contenttext__column2 {
+	width: 50%;
+	padding: 0 20px;
+}
+
+.coloritems3__item {
+	max-width: 378px;
+	margin: auto;
+	height: 100%;
+	background: #2d4c7d;
+	box-shadow: 5px 5px 8px -1px #7d7d7d;
+}
+
+.coloritems3__items .row > div {
+	margin: 25px 0 30px 0;
+	
+}
+
+.coloritems3__title {
+	
+}
+
+.coloritems3__text {
+	
+}
+
+.coloritems3__image {
+	height: 257px;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.coloritems3__image img {
+	width: initial;
+	max-height: initial;
+	height: initial;
+	max-width: initial;
+	margin: auto;
+	position: absolute;
+	left: -9999px;
+    right: -9999px;
+    margin: 0 auto;
+	top: -1px;
+}
+
+.coloritems3__content {
+	
+	padding: 15px 20px 10px 20px;
+	min-height: 113px;
+}
+
+.coloritems3__title {
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 1.2;
+	margin-bottom: 10px;
+}
+
+.coloritems3__text {
+  font-size: 13px;  
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+ 
+}
 
 
 
@@ -2051,6 +2173,13 @@ input:disabled {
 	.pagebanner_bg {
 		height: 220px;
 		margin: 10px 0;
+	}
+	.contenttext__column2 {
+		width: 100%;
+		padding: 10px 0;
+	}
+	.contenttext_columns2 {
+		display: block;
 	}
 }
 
