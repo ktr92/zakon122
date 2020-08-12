@@ -21,7 +21,7 @@ body {
 
 
 
-* {
+*, *:focus {
 	outline: none !important;
 }
 
@@ -685,6 +685,37 @@ textarea {
 	    display: block;
 }
 
+form input[type="text"],
+form input[type="tel"],
+form input[type="email"]
+ {
+	background: #fff;
+	border-radius: 0;
+	border: 1px solid rgb(154, 154, 154);
+	font-size: 13px;
+	color: rgb(154, 154, 154);
+	width: 100%;
+	max-width: 296px;
+	margin: auto;
+	    display: block;
+		height: 42px;
+	line-height: 40px;
+}
+form textarea {
+	background: #fff;
+	border-radius: 0;
+	border: 1px solid rgb(154, 154, 154);
+	font-size: 13px;
+	color: rgb(154, 154, 154);
+	width: 100%;
+	padding: 10px 20px;
+	margin: auto;
+	    display: block;
+}
+
+
+
+
 .form__textbtn {
   font-size: 13px;
   color: rgb(255, 255, 255);
@@ -986,77 +1017,21 @@ body.modal-open {
 	text-align: center;
 }
 
-.modal__form input[type="text"],
-.modal__form input[type="tel"],
-.modal__form input[type="email"],
-.modal__form textarea,
-.modal__form input {
-	background: none;
-	border-radius: 10px;
-	border: 1px solid #b1b1b1;
-	color: #000;
-	font-size: 16px;
-	font-weight: 300;
-	width: 100%;
-	max-width: 100%;
+.modal__form .form__textbtn {
+	    color: rgb(45, 76, 125);
+		padding-bottom: 0;
 }
 
-.modal__form ::-webkit-input-placeholder {
-	/* Chrome/Opera/Safari */
-	color: #000;
-	font-size: 16px;
-	font-weight: 300;
+.modal__form .form__textbtn a {
+	    color: rgb(45, 76, 125);
 }
 
-.modal__form ::-moz-placeholder {
-	/* Firefox 19+ */
-	color: #000;
-	font-size: 16px;
-	font-weight: 300;
+.modal__form {
+    margin: 20px 0 0 0;
+    max-width: 296px;
+    margin: 20px auto;
+    text-align: center;
 }
-
-.modal__form :-ms-input-placeholder {
-	/* IE 10+ */
-	color: #000;
-	font-size: 16px;
-	font-weight: 300;
-}
-
-.modal__form :-moz-placeholder {
-	/* Firefox 18- */
-	color: #000;
-	font-size: 16px;
-	font-weight: 300;
-}
-
-.modal__form .check label {
-	color: #000;
-	font-weight: 400;
-}
-
-.modal__form .check label a {
-	color: #00548e;
-	font-weight: 400;
-	border-bottom: 1px solid #00548e;
-}
-
-.modal__form .check label a:hover {
-	border-bottom: none;
-}
-
-.modal__form .check label:before {
-	background: url(/images/checkbox_black.png) left center no-repeat;
-	content: "";
-	width: 16px;
-	height: 16px;
-	position: absolute;
-	left: 0;
-}
-
-.modal__form .check input[type=checkbox]:checked+label:before {
-	background: url(/images/checkbox_black_checked.png) left center no-repeat;
-}
-
 .form-group {
 	display: inline-block;
 	width: 100%;
@@ -1638,6 +1613,96 @@ input:disabled {
 	background: #dee7f6;
 }
 
+.contactsitems {
+	max-width: 408px;
+}
+
+.contacts__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.contacts__icon {
+	width: 40px;
+	text-align: center;
+}
+.contacts__title {
+  font-size: 17px;
+  color: rgb(45, 76, 125);
+  text-transform: uppercase;
+  line-height: 1.2;
+	background: #dfe8f7;
+	padding: 2px 10px;
+	width: 100%;
+	margin-left: 15px;
+
+}
+
+.contacts__content {
+	padding-left: 60px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	line-height: 1.2;
+	    color: #000;
+}
+.contacts__content a{
+	
+	    color: #000;
+}
+
+.footer__phones.contacts__phones .btn_color {
+	color: #fff;
+	min-width: 152px;
+	font-weight: 400;
+}
+.footer__phones.contacts__phones .footer__phone {
+	    justify-content: space-between;
+}
+
+.contacts__phones .footer__phonesnum a.footer__tel {
+	color: #000;
+}
+.contacts__phones .footer__phonestext {
+	color: #000;
+	    text-align: left;
+}
+
+.footer__phones.contacts__phones {
+    margin-right: 20px;
+}
+
+.contacts__phones .footer__phonesnum a.footer__tel {
+	text-align: right;
+}
+
+.fileinput-label {
+  font-size: 15px;
+  color: rgb(217, 217, 217);
+  position: relative;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.fileinput-label  span {
+	padding-left: 6px;
+}
+.fileinput-label:hover {
+
+  color: #fff;
+ 
+}
+
+
+.fileinput {
+   opacity: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+.form__input_file {
+	margin-bottom: 5px;
+}
 
 @media (max-width: 1280px) {
 	.header__phones {
@@ -2203,6 +2268,30 @@ input:disabled {
 	.imgitems3_page .imgitems3__item {
     margin: 15px 0;
 }
+.contacts__phones .footer__phonesnum a.footer__tel {
+    font-size: 16px;
+    
+}
+.contacts__title {
+	margin-left: 5px;
+}
+.contacts__content {
+    padding-left: 50px;
+}
+.contactsitems {
+	margin-bottom: 20px;
+}
+.footer__phones .footer__phone:last-child .footer__phonesnum > a{
+	display: none;
+}
+.footer__phones .footer__phone:last-child .footer__phonestext{
+	display: none;
+}
+.modal-body {
+	padding: 0;
+}
+
+
 }
 
 

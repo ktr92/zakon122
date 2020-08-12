@@ -250,7 +250,7 @@
 											<div class="footer__phonesnum">
 												<a href="tel:+79264134138" class="footer__tel">+7 (926) 413-41-38</a>
 												<a href="tel:+79265280540" class="footer__tel">+7 (926) 528-05-40</a>
-												<div class="footer__callback"><a href="" class="btn btn_color">Заказать звонок</a></div>
+												<div class="footer__callback"><a href="#callback" data-toggle="modal" class="btn btn_color">Заказать звонок</a></div>
 											</div>											
 										</div>
 									</div>
@@ -269,11 +269,12 @@
 				</div>
          </footer>
     
-      <!-- Модальные окно - Заказать звонок -->
-      <div id="myModal" class="modal fade">
+     <!-- Модальные окно - Заказать звонок -->
+      <div id="callback" class="modal fade">
          <div class="modal-dialog">
-            <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><img src="/images/close.png"></button>
+           
             <div class="modal-content">
+				 <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><img src="/images/close.png"></button>
                <div class="modal-body">
                   <div class="modal__content">
                      <div class="modal-title">Заказать звонок</div>
@@ -286,12 +287,12 @@
                               <input type="tel" name="" placeholder="+7 (___) ___-__-__">
                            </div>
                            <div class="form-group">
-                              <div class="check">
-                                 <input type="checkbox" id="checkbox_3"  /> <label for="checkbox_3">Я согласен на <a href="">обработку персональных данных</a></label>
-                              </div>
+                              <div class="form__input form__input_submit">
+									<div class="form__textbtn"><span>Нажимая на кнопку “Отправить”, я даю согласие на обработку персональных данных и <a href="#">соглашаюсь с политикой конфиденциальности</a></span></div>									
+								</div>
                            </div>
                            <div class="form-group form-group_last">
-                              <button class="btn btn_gradient btn_modal maingradient" type="submit">Отправить заявку</button>
+                              <button class="btn btn_color" type="submit">Отправить заявку</button>
                            </div>
                         </form>
                      </div>
@@ -300,175 +301,7 @@
             </div>
          </div>
       </div>
-      <!-- Модальные окно - Заказать тариф -->
-      <div id="myModal_pricing1" class="modal fade">
-         <div class="modal-dialog">
-            <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><img src="/images/close.png"></button>
-            <div class="modal-content">
-               <div class="modal-body">
-                  <div class="modal__content">
-                     <div class="modal-title">Форма заявки</div>
-                     <div class="modal__form">
-                        <form>
-                           <div class="form-group">
-                              <input type="text" name="" value="Тариф: БАЗОВЫЙ" disabled>
-                           </div>
-                           <div class="form-group">
-                              <input type="text" name="" placeholder="Ваше имя">
-                           </div>
-                           <div class="form-group">
-                              <input type="tel" name="" placeholder="+7 (___) ___-__-__">
-                           </div>
-                           <div class="form-group">
-                              <input type="email" name="" placeholder="E-mail" class="input-error">
-                           </div>
-                           <div class="form-group">
-                              <input type="text" name="" placeholder="Сайт компании">
-                           </div>
-                           <div class="form-group">
-                              <textarea rows="4">Комментарии ...</textarea>
-                           </div>
-                           <div class="form-group">
-                              <div class="check">
-                                 <input type="checkbox" id="checkbox_4"  /> <label for="checkbox_4">Я согласен на <a href="">обработку персональных данных</a></label>
-                              </div>
-                           </div>
-                           <div class="form-group form-group_last">
-                              <button class="btn btn_gradient btn_modal maingradient" type="submit">Отправить заявку</button>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div id="myModal_pricing2" class="modal fade">
-         <div class="modal-dialog">
-            <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><img src="/images/close.png"></button>
-            <div class="modal-content">
-               <div class="modal-body">
-                  <div class="modal__content">
-                     <div class="modal-title">Форма заявки</div>
-                     <div class="modal__form">
-                        <form>
-                           <div class="form-group">
-                              <input type="text" name="" value="Тариф: БАЗОВЫЙ" disabled>
-                           </div>
-                           <div class="form-group">
-                              <input type="text" name="" placeholder="Ваше имя">
-                           </div>
-                           <div class="form-group">
-                              <input type="tel" name="" placeholder="+7 (___) ___-__-__">
-                           </div>
-                           <div class="form-group">
-                              <input type="email" name="" placeholder="E-mail" class="input-error">
-                           </div>
-                           <div class="form-group">
-                              <input type="text" name="" placeholder="Сайт компании">
-                           </div>
-                           <div class="form-group">
-                              <textarea rows="4">Комментарии ...</textarea>
-                           </div>
-                           <div class="form-group">
-                              <div class="check">
-                                 <input type="checkbox" id="checkbox_4"  /> <label for="checkbox_4">Я согласен на <a href="">обработку персональных данных</a></label>
-                              </div>
-                           </div>
-                           <div class="form-group form-group_last">
-                              <button class="btn btn_gradient btn_modal maingradient" type="submit">Отправить заявку</button>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div id="myModal_pricing3" class="modal fade">
-         <div class="modal-dialog">
-            <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><img src="/images/close.png"></button>
-            <div class="modal-content">
-               <div class="modal-body">
-                  <div class="modal__content">
-                     <div class="modal-title">Форма заявки</div>
-                     <div class="modal__form">
-                        <form>
-                           <div class="form-group">
-                              <input type="text" name="" value="Тариф: БАЗОВЫЙ" disabled>
-                           </div>
-                           <div class="form-group">
-                              <input type="text" name="" placeholder="Ваше имя">
-                           </div>
-                           <div class="form-group">
-                              <input type="tel" name="" placeholder="+7 (___) ___-__-__">
-                           </div>
-                           <div class="form-group">
-                              <input type="email" name="" placeholder="E-mail" class="input-error">
-                           </div>
-                           <div class="form-group">
-                              <input type="text" name="" placeholder="Сайт компании">
-                           </div>
-                           <div class="form-group">
-                              <textarea rows="4">Комментарии ...</textarea>
-                           </div>
-                           <div class="form-group">
-                              <div class="check">
-                                 <input type="checkbox" id="checkbox_4"  /> <label for="checkbox_4">Я согласен на <a href="">обработку персональных данных</a></label>
-                              </div>
-                           </div>
-                           <div class="form-group form-group_last">
-                              <button class="btn btn_gradient btn_modal maingradient" type="submit">Отправить заявку</button>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div id="myModal_pricing4" class="modal fade">
-         <div class="modal-dialog">
-            <button type="button" class="close" id="modal_zvonok_close" data-dismiss="modal" aria-hidden="true"><img src="/images/close.png"></button>
-            <div class="modal-content">
-               <div class="modal-body">
-                  <div class="modal__content">
-                     <div class="modal-title">Форма заявки</div>
-                     <div class="modal__form">
-                        <form>
-                           <div class="form-group">
-                              <input type="text" name="" value="Тариф: БАЗОВЫЙ" disabled>
-                           </div>
-                           <div class="form-group">
-                              <input type="text" name="" placeholder="Ваше имя">
-                           </div>
-                           <div class="form-group">
-                              <input type="tel" name="" placeholder="+7 (___) ___-__-__">
-                           </div>
-                           <div class="form-group">
-                              <input type="email" name="" placeholder="E-mail" class="input-error">
-                           </div>
-                           <div class="form-group">
-                              <input type="text" name="" placeholder="Сайт компании">
-                           </div>
-                           <div class="form-group">
-                              <textarea rows="4">Комментарии ...</textarea>
-                           </div>
-                           <div class="form-group">
-                              <div class="check">
-                                 <input type="checkbox" id="checkbox_4"  /> <label for="checkbox_4">Я согласен на <a href="">обработку персональных данных</a></label>
-                              </div>
-                           </div>
-                           <div class="form-group form-group_last">
-                              <button class="btn btn_gradient btn_modal maingradient" type="submit">Отправить заявку</button>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+     
       <script type="text/javascript" src="//yastatic.net/jquery/2.1.1/jquery.min.js"></script>
       <script type="text/javascript" src="/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="/js/slick.min.js"></script>
