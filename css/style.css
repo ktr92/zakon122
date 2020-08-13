@@ -101,7 +101,7 @@ ul {
     min-width: 100px;
     font-size: 16px;
     color: #7b7b7b;
-    border-radius: 4px;
+    border-radius: 0;
     padding: 9px 18px;
     display: inline-block; }
 @media (max-width: 1199.98px) {
@@ -177,7 +177,21 @@ ul {
   color: rgb(34, 34, 33);
   text-transform: uppercase;
   line-height: 1.2;
+  
+    padding-bottom: 2px;
+
  
+}
+
+
+.mainmenu ul li a:hover {
+  color:  rgb(45, 76, 125);
+
+ 
+}
+
+.mainmenu ul li.active a {
+	border-bottom: 1px solid #bc5050;
 }
 
 .header__main {
@@ -629,12 +643,43 @@ font-weight: 400;
 
 .form__textbtn a {
 	color: #fff;
+	text-decoration: underline;
+}
+.form__textbtn a:hover {
+	color: #fff;
+	text-decoration: none;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-textarea {
+.form__input input[type="text"],
+.form__input input[type="tel"],
+.form__input input[type="email"],
+.form__input textarea {
+	background: none;
+	border-radius: 0;
+	border: 1px solid rgb(154, 154, 154);
+
+	  font-size: 15px;
+  color: rgb(154, 154, 154);
+}
+
+.form__input input[type="text"],
+.form__input input[type="tel"],
+.form__input input[type="email"] {
+	height: 38px;
+	line-height: 38px;
+	padding: 0 15px;
+}
+
+.form__input textarea {
+	width: 100%;
+	padding: 10px 15px;
+	resize: none;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group textarea {
 	background: none;
 	border-radius: 0;
 	border: 1px solid rgb(154, 154, 154);
@@ -643,19 +688,21 @@ textarea {
   color: rgb(154, 154, 154);
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"] {
 	height: 38px;
 	line-height: 38px;
 	padding: 0 15px;
 }
 
-textarea {
+.form__input textarea {
 	width: 100%;
 	padding: 10px 15px;
 	resize: none;
 }
+
+
 
 .formblock input[type="text"],
 .formblock input[type="tel"],
@@ -685,9 +732,9 @@ textarea {
 	    display: block;
 }
 
-form input[type="text"],
-form input[type="tel"],
-form input[type="email"]
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"]
  {
 	background: #fff;
 	border-radius: 0;
@@ -701,7 +748,34 @@ form input[type="email"]
 		height: 42px;
 	line-height: 40px;
 }
-form textarea {
+.form-group textarea {
+	background: #fff;
+	border-radius: 0;
+	border: 1px solid rgb(154, 154, 154);
+	font-size: 13px;
+	color: rgb(154, 154, 154);
+	width: 100%;
+	padding: 10px 20px;
+	margin: auto;
+	    display: block;
+}
+.form__input input[type="text"],
+.form__input input[type="tel"],
+.form__input input[type="email"]
+ {
+	background: #fff;
+	border-radius: 0;
+	border: 1px solid rgb(154, 154, 154);
+	font-size: 13px;
+	color: rgb(154, 154, 154);
+	width: 100%;
+	max-width: 296px;
+	margin: auto;
+	    display: block;
+		height: 42px;
+	line-height: 40px;
+}
+.form__input textarea {
 	background: #fff;
 	border-radius: 0;
 	border: 1px solid rgb(154, 154, 154);
@@ -800,6 +874,10 @@ form textarea {
   color: rgb(45, 76, 125);
   text-transform: uppercase;
   line-height: 1.2;
+}
+
+.footer__menu ul li a:hover {
+	color: #000;
 }
 
 .footer__items {
@@ -929,7 +1007,8 @@ form textarea {
 
 ::-webkit-input-placeholder {
 	/* Chrome/Opera/Safari */
-  font-size: 13px;
+ display: block;
+	  font-size: 15px;
   color: rgb(154, 154, 154);
 
 }
@@ -937,21 +1016,28 @@ form textarea {
 
 ::-moz-placeholder {
 	/* Firefox 19+ */
-	  font-size: 13px;
+display: block;
+	  font-size: 15px;
   color: rgb(154, 154, 154);
 }
 
 :-ms-input-placeholder {
 	/* IE 10+ */
-  font-size: 13px;
+	display: block;
+	  font-size: 15px;
   color: rgb(154, 154, 154);
 }
 
 :-moz-placeholder {
 	/* Firefox 18- */
-	  font-size: 13px;
+	display: block;
+	  font-size: 15px;
   color: rgb(154, 154, 154);
 }
+
+
+
+
 
 .slick-dots li button {
 	background: url(/images/dots.png);
@@ -1142,7 +1228,7 @@ input:disabled {
 }
 
 .breadcrumbs ul {
-  padding: 10px 0;
+  padding: 10px 0 0 0;
   list-style: none;
 
 }
@@ -1186,11 +1272,12 @@ input:disabled {
 
 .pageheader {
 	text-align: center;
-	margin: 15px 0 15px 0;
+	margin: 10px 0 15px 0;
 }
 .pageheader__title {
 	margin-bottom: 29px;
 }
+
 
 .pageheader__title h1 {
   font-size: 50px;
@@ -1223,7 +1310,14 @@ input:disabled {
 }
 
 .page {
-	padding: 29px 0;
+	padding: 10px 0 29px 0;
+}
+.pageheader__title {
+	margin-bottom: 15px;
+}
+
+.page .pageheader {
+	margin-bottom: 5px;
 }
 
 .page__header {
@@ -1327,7 +1421,7 @@ input:disabled {
 
 
 .page__content {
-	padding: 10px 0 20px 0;
+	padding: 5px 0 20px 0;
 }
 .pagebanner {
 	margin: 10px -15px;
@@ -1422,6 +1516,10 @@ input:disabled {
 
 .imglargeitems_page {
 	margin-bottom: 50px;
+}
+
+.imglargeitems_page {
+	padding: 0;
 }
 
 .rowsitems {
@@ -1704,7 +1802,31 @@ input:disabled {
 	margin-bottom: 5px;
 }
 
+.footer__round a {
+	display: block;
+	width: 100%;
+    height: 100%;
+	position: relative;
+}
+.footer__round a img {
+display: block;
+    position: absolute;
+    top: -49px;
+    bottom: -49px;
+    left: -49px;
+    right: -49px;
+    margin: auto;
+}
+
+.footer__rounds .footer__round:last-child a img {
+	    left: -51px;
+}
+
 @media (max-width: 1280px) {
+	.mission {
+	
+	height: 460px;
+}
 	.header__phones {
 		margin: 0 0 0 15px;
 	}
@@ -1730,7 +1852,7 @@ input:disabled {
 		width: 91%;
 	}
 	.search__full {
-		top: -5px;
+		top: 0;
 		right: 30px;
 	}
 	.itemsimg__title {
